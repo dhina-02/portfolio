@@ -1,0 +1,135 @@
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@500&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+/* 
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Code Pro", monospace;
+*/
+
+/* Background */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    200deg,
+    #92024a 0%,
+    #a001d1 70%,
+    #5d5050 100%
+  );
+}
+/* Nav bar */
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav-ul {
+  width: 50%;
+  height: 50px;
+  background: #1c131f9f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 2%;
+}
+.nav-ul li {
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -2px;
+  font-size: 19px;
+  width: 50px;
+}
+.nav-ul li:hover {
+  transition: 300ms all linear;
+  letter-spacing: 2px;
+}
+.home-container {
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+.text-container {
+  width: 520px;
+  color: #ffffff;
+}
+.text-container h1{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 55px;
+   color:#5bffd6 ;
+}
+.text-container h2{
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+}
+.image-container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.layer {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #0d0c0c00;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 300ms all ease-in;
+}
+.layer:hover {
+  background-color: #0d0c0c83;
+}
+.image-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: bounce 5s 1;
+}
+
+/* Keyframes */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 550px) {
+  .nav-ul li {
+    font-size: 15px;
+  }
+}
+/* Tablet responsive */
+@media only screen and (max-width: 1000px) {
+  .nav-ul {
+    width: 70%;
+  }
+}
