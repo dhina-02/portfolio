@@ -16,7 +16,7 @@
 }
 .home {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #ff3cac;
   background-image: linear-gradient(
     200deg,
@@ -52,7 +52,7 @@
 }
 .nav-ul li:hover {
   transition: 300ms all linear;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .home-container {
   height: 90%;
@@ -65,12 +65,12 @@
   width: 520px;
   color: #ffffff;
 }
-.text-container h1{
+.text-container h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 55px;
-   color:#5bffd6 ;
+  color: #5bffd6;
 }
-.text-container h2{
+.text-container h2 {
   font-size: 35px;
   font-family: "Poppins", sans-serif;
 }
@@ -78,30 +78,69 @@
   width: 250px;
   height: 250px;
   position: relative;
-}
-.layer {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background-color: #0d0c0c00;
-  top: 0;
-  left: 0;
   border-radius: 50%;
-  transition: 300ms all ease-in;
-}
-.layer:hover {
-  background-color: #0d0c0c83;
+  cursor: pointer;
 }
 .image-container img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  animation: bounce 5s 1;
 }
-
+.profile-text{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 40px;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  background-color: #05050598;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 600ms all ease-in;
+  z-index: 100;
+  opacity: 0;
+}
+.image-container:hover .profile-text {
+  top: 0px;
+  left: 0px;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  opacity:1;
+  transform: rotate(360deg); 
+}
+.image-container img:hover {
+  filter: blur(2px);
+}
+.short-intro{
+  height: 50vh;
+  width: 100%;
+   background-image:linear-gradient(
+    200deg,
+    #51494d 0%,
+    #393333 50%,
+    #383434 70%
+  );
+}
+.text-head h1{
+  text-align: center;
+ padding-top: 20px;
+ font-family: "poppins";
+ font-size: 45px;
+ color: #8e8989;
+}
+.text-head p{
+  text-align: justify;
+  padding: 10px 50px;
+  font-family: "Poppins", sans-serif;
+   color: #8e8989;
+}
 /* Keyframes */
+
 
 @keyframes bounce {
   0%,
