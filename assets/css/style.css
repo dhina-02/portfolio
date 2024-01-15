@@ -126,7 +126,7 @@
     #383434 70%
   );
 }
-.text-head h1{
+.heading{
   text-align: center;
  padding-top: 20px;
  font-family: "poppins";
@@ -139,6 +139,27 @@
   font-family: "Poppins", sans-serif;
    color: #8e8989;
 }
+/* about */
+.about{
+  height: 100vh;
+  width: 100%;
+  background-color: #322c2c; 
+}
+
+
+/* Project */
+.project{
+  height: 100vh;
+  width: 100%;
+  background-color: #322c2c; 
+}
+/* Contact */
+.contact{
+  height: 100vh;
+  width: 100%;
+  background-color: #322c2c; 
+}
+
 /* Keyframes */
 
 
