@@ -145,7 +145,27 @@
   width: 100%;
   background-color: #322c2c; 
 }
-
+.skill{
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-set{
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #22574cce;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.skill .skill-logo{
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+.skill-logo img{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /* Project */
 .project{
