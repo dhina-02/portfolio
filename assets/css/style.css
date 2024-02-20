@@ -36,10 +36,12 @@
   height: 50px;
   background: #1c131f9f;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 30px;
   margin-top: 2%;
+  padding: 0px;
+  text-align: center;
 }
 .nav-ul li {
   list-style: none;
@@ -49,10 +51,11 @@
   letter-spacing: -2px;
   font-size: 19px;
   width: 50px;
+  border-bottom: 1px solid transparent;
 }
 .nav-ul li:hover {
   transition: 300ms all linear;
-  letter-spacing: 1px;
+   border-bottom: 1px solid #fff;
 }
 .home-container {
   height: 90%;
@@ -62,8 +65,11 @@
   text-transform: uppercase;
 }
 .text-container {
-  width: 520px;
+  background-color: #827e7e5f;
+  padding: 10px;
+  border-radius: 10px;
   color: #ffffff;
+  box-shadow: 1px 2px 5px;
 }
 .text-container h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -75,15 +81,15 @@
   font-family: "Poppins", sans-serif;
 }
 .image-container {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   position: relative;
   border-radius: 50%;
   cursor: pointer;
 }
 .image-container img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 .profile-text{
@@ -147,7 +153,7 @@
 }
 .skill{
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .skill-set{
   text-align: center;
@@ -169,10 +175,32 @@
 
 /* Project */
 .project{
-  height: 100vh;
   width: 100%;
   background-color: #322c2c; 
 }
+.project-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #92024a;
+}
+.project-box{
+  height: 300px;
+  width: 300px;
+  margin: 4px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #8e8989;
+}
+.project-box img{
+  width: 200px;
+}
+
+
 /* Contact */
 .contact{
   height: 100vh;
@@ -180,7 +208,7 @@
   background-color: #322c2c; 
 }
 
-/* Keyframes */
+/* Keyframes Animations */
 
 
 @keyframes bounce {
@@ -205,6 +233,15 @@
 @media only screen and (max-width: 550px) {
   .nav-ul li {
     font-size: 15px;
+  }
+  .home-container {
+   flex-direction: column-reverse;
+  }
+  .text-container h1{
+    font-size: 45px;
+  }
+  .text-container h2{
+    font-size: 25px;
   }
 }
 /* Tablet responsive */
