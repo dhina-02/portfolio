@@ -32,6 +32,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 100;
 }
 .nav-ul {
   width: 50%;
@@ -50,7 +52,6 @@
   color: var(--white-text);
   cursor: pointer;
   font-family: "Source Code Pro", monospace;
-  letter-spacing: -2px;
   font-size: 19px;
   width: 50px;
   border-bottom: 1px solid transparent;
