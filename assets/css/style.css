@@ -11,8 +11,8 @@
 }
 /* Background */
 * {
-  padding: 0 ;
-  margin: 0 ;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -100,7 +100,7 @@
   font-size: 40px;
   font-family: "poppins", sans-serif;
   color: var(--white-text);
-  background-color: #05050598;
+  background-color: #050505c3;
   width: 30%;
   height: 30%;
   border-radius: 50%;
@@ -119,9 +119,7 @@
   height: 100%;
   opacity: 1;
   transform: rotate(360deg);
-}
-.image-container img:hover {
-  filter: blur(2px);
+  z-index: 10;
 }
 .short-intro {
   height: auto;
@@ -141,7 +139,7 @@
   font-size: 45px;
   color: #1ab3ff;
 }
-.text-head p{
+.text-head p {
   margin-bottom: 0;
 }
 .text-head p {
@@ -158,8 +156,7 @@
 .about {
   height: auto;
   width: 100%;
-  background-color: #4B4453;
-  
+  background-color: #4b4453;
 }
 .skill {
   width: 100%;
@@ -210,7 +207,7 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(160deg, #929192f7 0%, #5a5a5ad6 80%);
   position: relative;
@@ -252,7 +249,6 @@
   animation: bounce 1s 1 linear;
 }
 .project-box img {
- 
   width: 285px;
   height: 160px;
 }
@@ -270,10 +266,11 @@
   background-color: #322c2c;
   position: relative;
 }
-.contact-sub{
- 
+.contact-sub {
+  display: flex;
+  justify-content: space-evenly;
 }
-form{
+form {
   width: 60%;
 }
 .form-img {
@@ -281,26 +278,6 @@ form{
   height: 392px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #000000;
-
-}
-/* Keyframes Animations */
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translate(0);
-  }
-
-  40% {
-    transform: translateY(-5px);
-  }
-
-  60% {
-    transform: translateY(-2px);
-  }
 }
 
 /* mobile responsive */
@@ -328,12 +305,40 @@ form{
     width: 130px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .contact-sub {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  form {
+    width: 80%;
+  }
+}
 /* Tablet responsive */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   .nav-ul {
     width: 70%;
   }
   .home-container {
     flex-direction: column-reverse;
+  }
+}
+/* Keyframes Animations */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(-2px);
   }
 }
