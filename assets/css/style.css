@@ -125,12 +125,9 @@
 .short-intro {
   height: auto;
   width: 100%;
-  background-image: linear-gradient(
-    200deg,
-    #51494d 0%,
-    #393333 50%,
-    #383434 70%
-  );
+ background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
 }
 
 .heading {
@@ -139,6 +136,9 @@
   font-family: "poppins";
   font-size: 45px;
   color: #1ab3ff;
+}
+.text-head{
+  width: 70%;
 }
 .text-head p {
   margin-bottom: 0;
@@ -157,7 +157,7 @@
 .about {
   height: auto;
   width: 100%;
-  background-color: #4b4453;
+  background-color: #3f3f3f;
 }
 .skill {
   width: 100%;
@@ -197,7 +197,7 @@
 .project {
   height: auto;
   width: 100%;
-  background-color: #322c2c;
+ background-color: #3f3f3f;
   padding: 10px;
 }
 
@@ -264,7 +264,7 @@
 /* Contact */
 .contact {
   width: 100%;
-  background-color: #322c2c;
+  background-color: #513c3c;
   position: relative;
 }
 .contact-sub {
