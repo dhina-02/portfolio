@@ -17,7 +17,7 @@
   font-family: sans-serif;
 }
 .home {
-  height: 100vh;
+  padding: 20px 0;
   width: 100%;
   background-color: #ff3cac;
   background-image: linear-gradient(
