@@ -46,6 +46,11 @@
   margin-top: 2%;
   padding: 0px;
   text-align: center;
+  
+}
+.scroll-header{
+   background: #ffffffce;
+   color: #000;
 }
 .nav-ul li {
   list-style: none;
