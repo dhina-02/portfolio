@@ -45,12 +45,12 @@
   border-radius: 30px;
   margin-top: 2%;
   padding: 0px;
-  text-align: center;
-  
+  text-align: center;  
 }
 .scroll-header{
-   background: #ffffffce;
-   color: #000;
+   opacity: 1;
+   transition: 500ms all linear;
+   background-color: #3f31ffe7;
 }
 .nav-ul li {
   list-style: none;
@@ -269,7 +269,7 @@
 /* Contact */
 .contact {
   width: 100%;
-  background-color: #513c3c;
+  background-color: #2b2c45;
   position: relative;
 }
 .contact-sub {
