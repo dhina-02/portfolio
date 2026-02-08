@@ -540,3 +540,41 @@
     margin: 0 auto;
   }
 }
+/* Navbar scroll state */
+.nav-scrolled .nav-ul {
+  background: rgba(2, 6, 23, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Scroll reveal */
+.about-card,
+.skill-set,
+.project-box,
+.contact-form,
+.contact-image {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #020617;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
